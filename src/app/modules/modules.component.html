@@ -1,0 +1,34 @@
+<!-- FIN Eliminar menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf="mostrarMenu">
+    <a class="navbar-brand" href="/">PE IQBF</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarInvent" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Consultas
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarInvent">
+            <a class="dropdown-item" [routerLink]="['/consulta/buscar-expediente']">buscar-expediente</a>
+            <a class="dropdown-item" [routerLink]="['/consulta/consulta-de-permiso']">consulta-de-permiso</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarMant" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Registro
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarMant">
+            <a class="dropdown-item" (click)="registrarSolicitud()">registro-solicitud</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <router-outlet></router-outlet>
+  </div>

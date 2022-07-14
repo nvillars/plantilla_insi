@@ -1,0 +1,80 @@
+<div class="container-fluid">
+
+    <div class="card-body">
+
+        <div class="card">
+
+            <!--<h5 class="card-header text-center text-white animated fadeIn fast" [ngClass]="'card-info'"> -->
+            <h5 class="card-header text-center text-white animated fadeIn fast" [ngClass]="'card-info'">
+                FORMULAIO N° F104 <br>
+                COMUNICACION DE OPERACION(ES) INUSUAL(ES)
+            </h5>
+            <div class="card-body">
+                <!--
+                <div class="form-group row" style="margin-bottom: 10px;">
+                  <div class="col-12 col-sm-8 col-md-8 col-lg-9">
+                    <h6 style="color: red;" *ngIf="false">OPERACION INUSUAL N°: OPERIN-2022</h6>
+                  </div>
+                  <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+                    <h6 style="color: red;" class="">Solicitud: HI1 </h6>
+                  </div>
+                </div>
+
+                <div class="form-group row" style="margin-bottom: 5px;">
+                  <div class="col-12 col-sm-2 col-md-2 col-lg-1">
+                    <Label for="" style="font-weight: bold;">Expediente: </Label>
+                  </div>
+        
+                  <div class="col-12 col-sm-10 col-md-3 col-lg-3" style="padding-left: 40px;">
+                    <p>{{solicitud?.numSolicitud}}</p>
+                    
+                  </div>
+                  <div class="col-12 col-sm-3 col-md-1 col-lg-1">
+                    <label for="fecha" style="font-weight: bold;">Fecha de Ingreso:</label>
+                  </div>
+                  <div class="col-12 col-sm-4 col-md-3 col-lg-3 pb-2">
+                    <p-calendar name="fecHasta" id="hasta" [inputStyle]="{'width':'70%'}" [locale]="es" [showIcon]="true"
+              dateFormat="dd/mm/yy" ngModel [required]="true" [readonlyInput]="true"  [disabled]="true">12/07/2022</p-calendar>
+                  </div>
+                  <div class="col-12 col-sm-5 col-md-2 col-lg-4">
+                    <button class="btn btn-primary">Documentos Relacionadios <br> (Expediente/Solicitud</button>
+                  </div>
+                </div>-->
+                
+                <div class="form-group row d-flex"  >
+                    <p class="info">Para registrar un nuevo formulario seleccionar la opci&oacute;n "Registrar Nuevo Formulario"</p>
+                    <button type="button" class="btn btn-primary btn-sm m-2 ml-auto">Registrar Nuevo Formulario</button>
+                </div>
+                
+
+                <p>Filtros de B&uacute;squeda</p>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Rango de Fechas de Presentaci&oacute;n:</p>
+                        <div class="row" style="margin-bottom: 0px;">
+                          <label for="resultado" class="col-form-label col-12 col-sm-12 col-md-2 col-lg-2">Rango de Fechas de Presentaci&oacute;n:</label>
+                  
+                          <label for="desde" class="col-form-label col-12 col-sm-2 col-md-2 col-lg-1"
+                            style="padding-right: 0px;">Desde</label>
+                          <div class="col-12 col-sm-4 col-md-3 col-lg-3">
+                            <p-calendar name="fecDesde" id="desde" [inputStyle]="{'width':'70%'}" [locale]="es" [showIcon]="true"
+                              dateFormat="dd/mm/yy" ngModel [required]="true"  ></p-calendar>
+                          </div>
+                  
+                          <label for="hasta" class="col-form-label col-12 col-sm-2 col-md-2 col-lg-2">Hasta</label>
+                          <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+                            <p-calendar name="fecHasta" id="hasta" [inputStyle]="{'width':'70%'}" [locale]="es" [showIcon]="true"
+                              dateFormat="dd/mm/yy" ngModel [required]="true"  ></p-calendar>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

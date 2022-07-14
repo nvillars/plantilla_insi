@@ -1,1 +1,143 @@
-/* Add application styles & imports to this file! */
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    padding-bottom: 50px;
+}
+
+.img-logo {
+    width: 160px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.ui-fieldset-legend {
+    width: auto;
+}
+
+.ui-fieldset {
+    border: 2px groove #007bff !important;
+    padding: 0 0.4em 0.4em 0.4em !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #007bff;
+    box-shadow: 0px 0px 0px 0px #007bff;
+}
+
+.ui-fieldset-legend {
+    font-size: 1.5em !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+    color: #007bff;
+}
+
+.cabecera-table {
+    background-color: #337ab7 !important;
+    color: white !important;
+}
+
+.card {
+    border-color: rgb(167, 223, 251)!important;
+}
+
+.card-sinborde {
+    border-color: none;
+}
+
+.card-info {
+    color: rgb(49, 112, 143)!important;
+    font-size: 12px;
+    background-color: #337ab7 !important;
+    border-color: rgb(188, 232, 241)!important;
+}
+
+.ui-fieldset-legend {
+    font-size: 1em !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+}
+
+select {
+    font-size: 12px !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0063AE !important;
+    border-color: #0062cc !important;
+}
+
+.bg-primary {
+    background-color: #0063AE !important;
+}
+
+.border-primary {
+    border-color: #0063AE !important;
+}
+
+.date-invalid-feedback {
+    /* display: none; */
+    width: 100%;
+    margin-top: -.7rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.input-invalid-feedback {
+    /* display: none; */
+    width: 100%;
+    /* font-size: 80%; */
+    font-size: 0.7rem;
+    color: #dc3545;
+}
+
+.smModal>.modal-dialog {
+    max-width: 400px !important;
+    min-width: 200px !important;
+    width: 95% !important;
+    font-size: small;
+}
+
+.mdModal>.modal-dialog {
+    max-width: 550px !important;
+    min-width: 25px !important;
+    width: 95% !important;
+    font-size: small;
+}
+
+body .ui-table .ui-sortable-column .ui-sortable-column-icon {
+    color: #faf4f4 !important;
+  }
+
+  input[readonly].establecimiento {
+    background-color: white;
+  }
